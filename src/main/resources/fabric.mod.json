@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "adventurecraft",
+  "version": "${version}",
+
+  "name": "AdventureCraft",
+  "description": "A mod that makes",
+  "authors": [
+    "Qweru"
+  ],
+  "contact": {
+    "homepage": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "sources": "https://github.com/gkursi/adventureCraft"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/adventurecraft/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.qweru.adventure.Initialiser"
+    ]
+  },
+  "mixins": [
+    "adventure.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
